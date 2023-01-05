@@ -9,7 +9,8 @@
 #The consequence is that only one user at any one time on any one computer or else they
 #will clash on the dongles
 #This has only been tested on Ubuntu Linux and is unlikely to function on windows.
-#generat the piz file with:
+#generate the piz file with:
+# nrfutil pkg generate --debug-mode --sd-req 0 --hw-version 52 --application combined_V2_3.hex combined_V2_3.piz
 #nrfutil pkg generate --debug-mode --sd-req 0 --hw-version 52 --application combined_pca10059.hex app_dfu_package.piz
 # despite no soft device you cannot do without sd-req - but zero works for now. debug mode is essential also.
 #nrfutil pkg generate --debug-mode --sd-req 0 --hw-version 52 --application combined_pca10059.hex dfu.zip
