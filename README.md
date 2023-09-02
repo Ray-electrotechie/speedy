@@ -21,6 +21,8 @@ PySimpleGUI must be installed into the Python infrastructure.  Use pip list|grep
  ```nrfutil pkg generate --debug-mode --sd-req 0 --hw-version 52 --application myfile.hex myfile.piz```
  The "debug mode" is essential otherwise you need to handle signing of the executive files. This application does not handle more than one file e.g. does not handle Nordic soft devices separately; they will have to be conbined with your 'hex file. Copy the `myfile.piz` to `speedy/uploads`
  ## Operation
+ ![Image of speedy GUI](https://github.com/Ray-electrotechie/speedy/blob/main/speedy2_10.png "Speedy as Launched")
+ 
  A GUI should spring to life courtesy of PySimpleGUI (look it up on Github). It should be pretty obvious. Pick a file in the top left box (or if there is only one in the `speedy/uploads` directory, it will be already chosen), then wait for an announcement in the second box down on the left about having found a dongle. If you have plugged one in and it hasn't been found, then you probably need to push the hidden button to put it into bootloader mode. When the second button down tells you it has found a dongle, press it and the dongle will be programmed. Look at the 4th button down; it will tell you when it is safe to remove the dongle. If the "auto" button is pressed, as soon as a dongle is found, it will be programmed. No need to touch a mouse, just plug and unplug dongles. You should be able to figure out what the right hand column is for.
  
  In the directory `speedy`a log file `speedy_dongle_logfile` will be created at first run of the program, then have later logs appended. Move the file when it gets too big.
