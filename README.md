@@ -8,7 +8,7 @@ Speedy provides a log of the user name doing the programming, the time of each p
 ## Dependencies
 Speedy requires nrfutil from Nordic. The version tested was 6.1.0. This must be installed and made usable by the person doing the programming. The command line should be tested by programming a dongle prior to the use of Speedy.
 
-Python 3.8 is required. Ensure that typing "python` returns it's version string higher than 3.8. Then type exit()<ret> to escape.
+Python 3.8 is required. Ensure that typing "python" returns it's version string higher than 3.8. Then type exit()<ret> to escape.
  
 PySimpleGUI must be installed into the Python infrastructure.  Use pip list|grep PySimpleGUI to ensure that a version of PySimpleGUI greater than 4.46 is present.
 ## Installation
